@@ -1,11 +1,11 @@
 import React from 'react';
-import {BrowserRouter as Router, Redirect, Route, Switch} from 'react-router-dom'
-
+import { Route, Switch } from 'react-router-dom'
+import AppBar from '../appBar';
 
 const BaseLayout = () => (
     <div className="base">
         <header>
-            this is the header
+            <AppBar />
         </header>
         <div className="container">
             <Switch>
