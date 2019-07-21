@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme: Theme) =>
             margin: 'auto',
         },
         appBar: {
-            boxShadow: '0px 3px 10px rgba(165, 175, 186, 0.16)',
+            boxShadow: theme.shadows[1],
         },
         buttonMargin: {
             margin: 16,

@@ -7,7 +7,7 @@ const useStyles = makeStyles(
     createStyles({
         root: {
             paddingLeft: 100,
-            paddingRight: 108,
+            paddingRight: 100,
         },
     }),
 );
