@@ -6,6 +6,7 @@ import { ThemeProvider } from '@material-ui/styles';
 import './App.css';
 import {BrowserRouter as Router, Route} from "react-router-dom";
 import {CssBaseline} from "@material-ui/core";
+import 'typeface-roboto';
 
 const { shadows } = createMuiTheme();
 shadows[1] = '0px 3px 10px rgba(165, 175, 186, 0.16)';
