@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom'
 import AppBar from '../appBar';
 import Login from '../login';
+import Profile from '../profile';
 
 const BaseLayout = () => (
     <div style={{ height: '100vh'}}>
@@ -10,10 +11,8 @@ const BaseLayout = () => (
         </header>
         <div style={{ height: '100%' }}>
             <Switch>
-                <Route path="/" exact component={() => (<>/</>)} />
-                <Route path="/login" exact component={Login} />
-                <Route path="/profile"  component={() => (<>/profile</>)} />
-                <Route component={() => (<>Not Found 404</>)} />
+                <Route path="/profile"  component={Profile} />
+                <Route exact component={Login} />
             </Switch>
         </div>
     </div>

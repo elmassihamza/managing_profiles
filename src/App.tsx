@@ -28,6 +28,15 @@ const theme = createMuiTheme({
         subtitle1: {
             fontSize: '1.5rem',
         },
+        subtitle2: {
+            fontSize: '1.4rem',
+        },
+        body1: {
+            fontSize: '1.1rem',
+        },
+        body2: {
+            fontSize: '1.05rem',
+        },
     },
     overrides: {
         MuiToolbar: {

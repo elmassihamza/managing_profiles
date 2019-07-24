@@ -6,6 +6,7 @@ import TextField from '../inputs/TextField';
 import Button from "@material-ui/core/Button";
 import Link from "@material-ui/core/Link";
 import classNames from 'classnames';
+import { withRouter } from 'react-router-dom';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -44,8 +45,9 @@ const useStyles = makeStyles((theme: Theme) =>
     }),
 );
 
-export default function Login() {
+function Login(props: any) {
     const classes = useStyles();
+    const { history } = props;
     return(
         <Grid container justify="center" alignItems="center" className={classes.root}>
             <Grid xs={10} sm={8} md={6} lg={4} item>
@@ -68,6 +70,7 @@ export default function Login() {
                         variant="contained"
                         color="primary"
                         className={classes.button}
+                        onClick={() => {history.push('/profile')}}
                     >
                         s'inscrire
                     </Button>
@@ -81,3 +84,5 @@ export default function Login() {
         </Grid>
     )
 }
+
+export default withRouter(Login);
