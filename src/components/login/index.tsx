@@ -48,6 +48,7 @@ const useStyles = makeStyles((theme: Theme) =>
 function Login(props: any) {
     const classes = useStyles();
     const { history } = props;
+    const handleButtonClick = () => { history.push('/profile') };
     return(
         <Grid container justify="center" alignItems="center" className={classes.root}>
             <Grid xs={10} sm={8} md={6} lg={4} item>
@@ -70,7 +71,7 @@ function Login(props: any) {
                         variant="contained"
                         color="primary"
                         className={classes.button}
-                        onClick={() => {history.push('/profile')}}
+                        onClick={handleButtonClick}
                     >
                         s'inscrire
                     </Button>
